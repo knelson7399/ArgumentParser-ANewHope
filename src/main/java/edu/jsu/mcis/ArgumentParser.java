@@ -21,6 +21,7 @@ public class ArgumentParser{
         temp.setName(name);
         temp.setDescription(description);
         temp.setType(type);
+		System.out.println(temp);
 		addArg(temp);
        // map.put(name, temp);
     }
@@ -30,7 +31,7 @@ public class ArgumentParser{
 	}
 	
 	public void parse(String[] arg){
-		if(listArgs.size()!=arg.length){
+		if(listArgs.size()!=arg.length()){
 			getErrorMessage(arg);
 		}
 		else {

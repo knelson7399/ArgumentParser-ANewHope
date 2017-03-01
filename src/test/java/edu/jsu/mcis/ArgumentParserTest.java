@@ -31,12 +31,17 @@ public class ArgumentParserTest {
 	public void testAddArgMultArguments(){
 		pa.addArg("Parser", "", Argument.Type.INTEGER);
 		assertEquals(pa.getNumArguments(), 1);
+		pa.addArg("Parser2", "", Argument.Type.INTEGER);
+		assertEquals(pa.getNumArguments(), 2);
 	}
 	@Test
 	public void testAddArgArgument(){
 		ga.setName("length");
 		pa.addArg(ga);
 		assertEquals(pa.getNumArguments(), 1);
+		ga.setName("width");
+		pa.addArg(ga);
+		assertEquals(pa.getNumArguments(), 2);
 	}
 	@Test
 	public void testParse(){
@@ -50,6 +55,8 @@ public class ArgumentParserTest {
 		Argument temp = new Argument();
 		temp = pa.getArg("length");
 		assertEquals("val1", temp.getValue());
+		Argument temp2 = pa.getArg("Parser2");
+		assertEquals("val2", temp2.getValue());
 	}
 	@Test (expected= IllegalArgumentException.class)
 	public void testTooManyArgs(){
@@ -63,6 +70,10 @@ public class ArgumentParserTest {
 		Argument temp = new Argument();
 		temp = pa.getArg("length");
 		assertEquals("val1", temp.getValue());
+		Argument temp2 = pa.getArg("Parser2");
+		assertEquals("val2", temp2.getValue());
+		Argument temp3 = pa.getArg("Parser2");
+		assertEquals("val3", temp3.getValue());
 	}	
 	@Test (expected= IllegalArgumentException.class)
 	public void testTooFewArgs(){
