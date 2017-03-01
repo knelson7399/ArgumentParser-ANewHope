@@ -1,30 +1,34 @@
 *** Settings ***
-Library				keywords.ParseArgumentKeywords
+Library				keywords.ArgumentParserKeywords
 
 
 
 | *Variable*  | *Value*                                                                                                   |
 | ${expected} | usage: java VolumeCalculator length width height\nVolumeCalculator.java: error: unrecognized arguments: 43 |
+| ${expected} | usage: java VolumeCalculator length width height\nCalculate the volume of a box.\npositional arguments:\n   length the length of the box (float)\n   width the width of the box(float)\n   height the height of the box(float) |
 
 | *Test Case*                            | *Action*                              | *Argument*         | *Argument*   | *Argument* | *Argument* |
 | Test Volume Calculator Normal Function | Start Volume Calculator With Arguments | 7                  | 5            | 2          |            |
-|                                        | ${length}=                            | keywords.ParseArgumentKeywords.Get Length         |              |            |            |
+|                                        | ${length}=                            | Get Length         |              |            |            |
 |                                        | Should Be Equal                       | 7                  | ${length}    |            |            |
-|                                        | ${width}=                             | keywords.ParseArgumentKeywords.Get Width          |              |            |            |
+|                                        | ${width}=                             | Get Width          |              |            |            |
 |                                        | Should Be Equal                       | 5                  | ${width}     |            |            |
-|                                        | ${height}=                            | keywords.ParseArgumentKeywords.Get Height         |              |            |            |
+|                                        | ${height}=                            | Get Height         |              |            |            |
 |                                        | Should Be Equal                       | 2                  | ${height}    |            |            |
 |                                        | ${output}=                            | Get Program Output |              |            |            |
 |                                        | Should Be Equal                       | ${output}          | 70           |            |            |
 | Test Unrecognized Argument             | Start Volume Calculator With Arguments | 7                  | 5            | 2          | 43         |
 |                                        | ${output}=                            | Get Program Output |              |            |            |
-|                                        | Should Be Equal                       | ${output}          | ${expected}           |            |            |
+|                                        | Should Be Equal                       | ${output}          | 70           |            |            |
 | Test Absurd Program Normal Function    | Start Absurd Program With Arguments   | dog                | 2            | true       | 3.5        |
-|                                        | ${pet}=                               | keywords.ParseArgumentKeywords.Get Pet            |              |            |            |
+|                                        | ${pet}=                               | Get Pet            |              |            |            |
 |                                        | Should Be Equal                       | dog                | ${pet}       |            |            |
-|                                        | ${number}=                            | keywords.ParseArgumentKeywords.Get Number         |              |            |            |
+|                                        | ${number}=                            | Get Number         |              |            |            |
 |                                        | Should Be Equal                       | 2                  | ${number}    |            |            |
-|                                        | ${rainy}=                             | keywords.ParseArgumentKeywords.Get Rainy          |              |            |            |
+|                                        | ${rainy}=                             | Get Rainy          |              |            |            |
 |                                        | Should Be Equal                       | true               | ${rainy}     |            |            |
-|                                        | ${bathrooms}=                         | keywords.ParseArgumentKeywords.Get Bathrooms      |              |            |            |
+|                                        | ${bathrooms}=                         | Get Bathrooms      |              |            |            |
 |                                        | Should Be Equal                       | 3.5                | ${bathrooms} |            |            |
+| Test Usage Message 					 | Start Program With Arguments          | -h                 |              |
+|                                        | ${output}=                            | Get Program Output |              |
+|                                        | Should Be Equal                       | ${expected}        | ${output}    |

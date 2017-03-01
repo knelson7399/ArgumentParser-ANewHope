@@ -1,85 +1,79 @@
-
 package edu.jsu.mcis;
 
 import static org.junit.Assert.*;
 import org.junit.*;
 
 
-public class VolumeCalculatorTest {
-	private parseArgument pa;
-	private genArg ga;
+public class ArgumentParserTest {
+	private ArgumentParser pa;
+	private Argument ga;
 	
 	
 	@Before
 	public void setUp(){
-		pa = new parseArgument();
-		ga = new genArg();
+		pa = new ArgumentParser();
+		ga = new Argument();
 	}
 	
 	@Test
-	public void testgenArg(){
+	public void testArgument(){
 		ga.setName("length");
 		ga.setDescription("box length");
-		ga.setType(genArg.Type.INTEGER);
+		ga.setType(Argument.Type.INTEGER);
 		ga.setValue("7");
 		assertEquals("length", ga.getName());
 		assertEquals("box length", ga.getDescription());
-		assertEquals(genArg.Type.INTEGER, ga.getType());
+		assertEquals(Argument.Type.INTEGER, ga.getType());
 		assertEquals(7, ga.getValue());
 	}
 	
 	@Test	
-	public void addArgsMultArguments(){
-		pa.addArgs("Parser", "", genArg.Type.INTEGER);
-		assertEquals(pa.getlistSize(), 1);
-		pa.addArgs("Parser1","", genArg.Type.FLOAT);
-		assertEquals(pa.getlistSize(), 2);
+	public void testAddArgMultArguments(){
+		pa.addArg("Parser", "", Argument.Type.INTEGER);
+		assertEquals(pa.getNumArguments(), 1);
 	}
 	@Test
-	public void addArgsGenArg(){
+	public void testAddArgArgument(){
 		ga.setName("length");
-		pa.addArgs(ga);
-		assertEquals(pa.getlistSize(), 1);
+		pa.addArg(ga);
+		assertEquals(pa.getNumArguments(), 1);
 	}
 	@Test
-	public void parseArgs(){
-		genArg ga2 = new genArg();
+	public void testParse(){
+		Argument ga2 = new Argument();
 		ga2.setName("Parser2");
 		ga.setName("length");
-		pa.addArgs(ga);
-		pa.addArgs(ga2);
+		pa.addArg(ga);
+		pa.addArg(ga2);
 		String[] args = {"val1", "val2"};
-		pa.parseArgs(args);
-		genArg temp = new genArg();
+		pa.parse(args);
+		Argument temp = new Argument();
 		temp = pa.getArg("length");
 		assertEquals("val1", temp.getValue());
-		temp = pa.getArg("Parser2");
-		assertEquals("val2", temp.getValue());
 	}
 	@Test (expected= IllegalArgumentException.class)
-	public void TooManyArgs(){
-		genArg ga2 = new genArg();
+	public void testTooManyArgs(){
+		Argument ga2 = new Argument();
 		ga2.setName("Parser2");
 		ga.setName("length");
-		pa.addArgs(ga);
-		pa.addArgs(ga2);
+		pa.addArg(ga);
+		pa.addArg(ga2);
 		String[] args = {"val1", "val2", "val3"};
-		pa.parseArgs(args);
-		genArg temp = new genArg();
+		pa.parse(args);
+		Argument temp = new Argument();
 		temp = pa.getArg("length");
 		assertEquals("val1", temp.getValue());
-		
 	}	
 	@Test (expected= IllegalArgumentException.class)
-	public void TooFewArgs(){
-		genArg ga2 = new genArg();
+	public void testTooFewArgs(){
+		Argument ga2 = new Argument();
 		ga2.setName("Parser2");
 		ga.setName("length");
-		pa.addArgs(ga);
-		pa.addArgs(ga2);
+		pa.addArg(ga);
+		pa.addArg(ga2);
 		String[] args = {"val1"};
-		pa.parseArgs(args);
-		genArg temp = new genArg();
+		pa.parse(args);
+		Argument temp = new Argument();
 		temp = pa.getArg("length");
 		assertEquals("val1", temp.getValue());
 	}	
