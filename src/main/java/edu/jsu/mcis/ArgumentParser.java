@@ -10,6 +10,7 @@ public class ArgumentParser{
     private String programName;
     private String programDescription;
 	private String help;
+	private String message;
 
 	public ArgumentParser() {
                     
@@ -23,7 +24,6 @@ public class ArgumentParser{
         temp.setType(type);
 		System.out.println(temp);
 		addArg(temp);
-       // map.put(name, temp);
     }
 	
 	public void addArg(Argument arg){
@@ -31,7 +31,7 @@ public class ArgumentParser{
 	}
 	
 	public void parse(String[] arg){
-		if(listArgs.size()!=arg.length()){
+		if(listArgs.size()!=arg.length){
 			getErrorMessage(arg);
 		}
 		else {
@@ -79,17 +79,18 @@ public class ArgumentParser{
 		throw new IllegalArgumentException (message);
 	}
 	
-	/*public String getMessage(){
+	public String getMessage(){
 		return message;
-	}*/
+	}
 	
-	/*public void helpMessage(){
-		if(arg.equals("-h")){
+	public void helpMessage(){
+		if(listArgs.equals("-h")){
                 help = "usage: java VolumeCalculator length width height\nCalcuate the volume of a box.\npositional arguments:\nlength the length of the box (float)\nwidth the width of the box(float)\nheight the height of the box(float)";
-		
-			}
+				help = help.trim();
+				throw new IllegalArgumentException (help);
+		}
 	
-	}*/
+	}
 	public String getHelpMessage(){
 		return help;
 	}

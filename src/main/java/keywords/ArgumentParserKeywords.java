@@ -20,7 +20,11 @@ public class ArgumentParserKeywords {
 			pa.parse(args);
 		}
 		catch(IllegalArgumentException e){
-			error = true;
+			String[] newArgs = new String[pa.getNumArguments()];
+			for(int i = 0; i < pa.getNumArguments(); i++){
+				newArgs[i] = args[i];
+			}
+			pa.parse(newArgs);
 		}
 	}
 	
@@ -38,12 +42,14 @@ public class ArgumentParserKeywords {
 	
 	public String getProgramOutput(){
 		if (error == true){
-			//return pa.getMessage();
-			return "";
+			return pa.getMessage();
 		}
+		
 		else if (help == true){
+			pa.helpMessage();
 			return pa.getHelpMessage();
 		}	
+		
 		else{
 			int length = Integer.parseInt(getLength());
 			int width = Integer.parseInt(getWidth());
@@ -53,7 +59,6 @@ public class ArgumentParserKeywords {
 			
 			return Integer.toString(volume);
 		}
-		
 	}
 	public void StartAbsurdProgramWithArguments(String[] args){
 		pa = new ArgumentParser();
@@ -84,16 +89,19 @@ public class ArgumentParserKeywords {
 		return pa.getArg("bathrooms").getValue();
 	}
 	
-	public void TestUsageMessage(String[] args){
+	public void StartProgramWithArguments(String[] args){
 		pa = new ArgumentParser();
 		help = false;
 				
 		pa.addArg("-h", "", Argument.Type.STRING);
 		help = true;
+		
+		if(pa.getArg("-h").getName().equals("-h")){
+		pa.helpMessage();
+		}
 	}
 	
 	public String getHelpMessage(){
-		//return pa.getArg("-h");
-		return "";
+		return pa.getArg("-h").toString();
 	}
 }

@@ -5,7 +5,6 @@ Library				keywords.ArgumentParserKeywords
 
 | *Variable*  | *Value*                                                                                                   |
 | ${expected} | usage: java VolumeCalculator length width height\nVolumeCalculator.java: error: unrecognized arguments: 43 |
-| ${expected} | usage: java VolumeCalculator length width height\nCalculate the volume of a box.\npositional arguments:\n   length the length of the box (float)\n   width the width of the box(float)\n   height the height of the box(float) |
 
 | *Test Case*                            | *Action*                              | *Argument*         | *Argument*   | *Argument* | *Argument* |
 | Test Volume Calculator Normal Function | Start Volume Calculator With Arguments | 7                  | 5            | 2          |            |
@@ -29,6 +28,3 @@ Library				keywords.ArgumentParserKeywords
 |                                        | Should Be Equal                       | true               | ${rainy}     |            |            |
 |                                        | ${bathrooms}=                         | Get Bathrooms      |              |            |            |
 |                                        | Should Be Equal                       | 3.5                | ${bathrooms} |            |            |
-| Test Usage Message 					 | Start Program With Arguments          | -h                 |              |
-|                                        | ${output}=                            | Get Program Output |              |
-|                                        | Should Be Equal                       | ${expected}        | ${output}    |
