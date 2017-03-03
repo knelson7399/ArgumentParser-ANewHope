@@ -31,7 +31,7 @@ public class ArgumentParser{
 	}
 	
 	public void parse(String[] arg){
-		if(listArgs.size()!=arg.length()){
+		if(listArgs.size()!= arg.length){
 			getErrorMessage(arg);
 		}
 		else {

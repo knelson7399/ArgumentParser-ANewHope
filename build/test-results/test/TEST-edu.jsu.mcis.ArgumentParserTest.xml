@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.jsu.mcis.ArgumentParserTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-03-03T02:07:00" hostname="LAPTOP-NHA48JL9" time="0.078">
+<testsuite name="edu.jsu.mcis.ArgumentParserTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-03-03T11:42:10" hostname="Dikoko" time="0.007">
   <properties/>
-  <testcase name="testTooManyArgs" classname="edu.jsu.mcis.ArgumentParserTest" time="0.031"/>
+  <testcase name="testTooManyArgs" classname="edu.jsu.mcis.ArgumentParserTest" time="0.004"/>
   <testcase name="testParse" classname="edu.jsu.mcis.ArgumentParserTest" time="0.0"/>
-  <testcase name="testAddArgMultArguments" classname="edu.jsu.mcis.ArgumentParserTest" time="0.0"/>
+  <testcase name="testAddArgMultArguments" classname="edu.jsu.mcis.ArgumentParserTest" time="0.001"/>
   <testcase name="testArgument" classname="edu.jsu.mcis.ArgumentParserTest" time="0.0"/>
   <testcase name="testTooFewArgs" classname="edu.jsu.mcis.ArgumentParserTest" time="0.0"/>
   <testcase name="testAddArgArgument" classname="edu.jsu.mcis.ArgumentParserTest" time="0.0"/>
-  <system-out><![CDATA[edu.jsu.mcis.Argument@1b4e424b
-edu.jsu.mcis.Argument@7288c450
+  <system-out><![CDATA[edu.jsu.mcis.Argument@36ab215c
+edu.jsu.mcis.Argument@4f6b5d88
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
