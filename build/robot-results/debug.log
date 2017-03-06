@@ -1,4 +1,5 @@
 ==============================================================================
+<<<<<<< HEAD
 20170306 15:58:45.706 - INFO - + START SUITE: Acceptancetest [ ]
 ==============================================================================
 20170306 15:58:46.034 - INFO - +- START SUITE: Acceptancetest.ArgumentParserTest [ ]
@@ -237,4 +238,135 @@ edu.jsu.mcis.Argument@6d84c9a1
 20170306 15:58:47.815 - INFO - +- END SUITE: Acceptancetest.Feature2 (407)
 ==============================================================================
 20170306 15:58:47.893 - INFO - + END SUITE: Acceptancetest (3453)
+=======
+20170303 05:42:31.682 - INFO - + START SUITE: Acceptancetest [ ]
+==============================================================================
+20170303 05:42:31.782 - INFO - +- START SUITE: Acceptancetest.ArgumentParserTest [ ]
+==============================================================================
+20170303 05:42:31.790 - INFO - +-- START TEST: Test Volume Calculator Normal Function [ ]
+------------------------------------------------------------------------------
+20170303 05:42:31.818 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Start Volume Calculator With Arguments [ 7 | 5 | 2 ]
+20170303 05:42:31.832 - INFO - edu.jsu.mcis.Argument@5428b907
+edu.jsu.mcis.Argument@4175db2b
+edu.jsu.mcis.Argument@2100d2ba
+20170303 05:42:31.846 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Start Volume Calculator With Arguments (27)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170303 05:42:31.850 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Length [ ]
+20170303 05:42:31.848 - WARN - Keyword 'Get Length' found both from a custom test library 'keywords.ArgumentParserKeywords' and a standard library 'BuiltIn'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'keywords.ArgumentParserKeywords.Get Length' or 'BuiltIn.Get Length'.
+20170303 05:42:31.871 - INFO - ${length} = 7
+20170303 05:42:31.877 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Length (24)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170303 05:42:31.879 - INFO - +--- START KW: BuiltIn.Should Be Equal [ 7 | ${length} ]
+20170303 05:42:31.897 - INFO - +--- END KW: BuiltIn.Should Be Equal (11)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170303 05:42:31.899 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Width [ ]
+20170303 05:42:31.904 - INFO - ${width} = 5
+20170303 05:42:31.912 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Width (7)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170303 05:42:31.914 - INFO - +--- START KW: BuiltIn.Should Be Equal [ 5 | ${width} ]
+20170303 05:42:31.936 - INFO - +--- END KW: BuiltIn.Should Be Equal (21)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170303 05:42:31.945 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Height [ ]
+20170303 05:42:31.951 - INFO - ${height} = 2
+20170303 05:42:31.961 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Height (13)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170303 05:42:31.968 - INFO - +--- START KW: BuiltIn.Should Be Equal [ 2 | ${height} ]
+20170303 05:42:31.994 - INFO - +--- END KW: BuiltIn.Should Be Equal (26)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170303 05:42:31.996 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Program Output [ ]
+20170303 05:42:32.000 - INFO - ${output} = 70
+20170303 05:42:32.014 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Program Output (11)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170303 05:42:32.016 - INFO - +--- START KW: BuiltIn.Should Be Equal [ ${output} | 70 ]
+20170303 05:42:32.021 - INFO - +--- END KW: BuiltIn.Should Be Equal (5)
+------------------------------------------------------------------------------
+20170303 05:42:32.031 - INFO - +-- END TEST: Test Volume Calculator Normal Function (235)
+------------------------------------------------------------------------------
+20170303 05:42:32.036 - INFO - +-- START TEST: Test Unrecognized Argument [ ]
+------------------------------------------------------------------------------
+20170303 05:42:32.042 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Start Volume Calculator With Arguments [ 7 | 5 | 2 | 43 ]
+20170303 05:42:32.048 - INFO - edu.jsu.mcis.Argument@4a3fd832
+edu.jsu.mcis.Argument@4c829a47
+edu.jsu.mcis.Argument@10a6e738
+20170303 05:42:32.080 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Start Volume Calculator With Arguments (37)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170303 05:42:32.083 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Program Output [ ]
+20170303 05:42:32.087 - INFO - ${output} = 70
+20170303 05:42:32.089 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Program Output (6)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170303 05:42:32.091 - INFO - +--- START KW: BuiltIn.Should Be Equal [ ${output} | 70 ]
+20170303 05:42:32.097 - INFO - +--- END KW: BuiltIn.Should Be Equal (5)
+------------------------------------------------------------------------------
+20170303 05:42:32.101 - INFO - +-- END TEST: Test Unrecognized Argument (65)
+------------------------------------------------------------------------------
+20170303 05:42:32.103 - INFO - +-- START TEST: Test Absurd Program Normal Function [ ]
+------------------------------------------------------------------------------
+20170303 05:42:32.109 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Start Absurd Program With Arguments [ dog | 2 | true | 3.5 ]
+20170303 05:42:32.134 - INFO - edu.jsu.mcis.Argument@50ac39fa
+edu.jsu.mcis.Argument@4dd79bfe
+edu.jsu.mcis.Argument@5d5772ac
+edu.jsu.mcis.Argument@6d00fee7
+20170303 05:42:32.143 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Start Absurd Program With Arguments (31)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170303 05:42:32.145 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Pet [ ]
+20170303 05:42:32.151 - INFO - ${pet} = dog
+20170303 05:42:32.156 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Pet (9)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170303 05:42:32.159 - INFO - +--- START KW: BuiltIn.Should Be Equal [ dog | ${pet} ]
+20170303 05:42:32.168 - INFO - +--- END KW: BuiltIn.Should Be Equal (8)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170303 05:42:32.171 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Number [ ]
+20170303 05:42:32.177 - INFO - ${number} = 2
+20170303 05:42:32.180 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Number (9)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170303 05:42:32.190 - INFO - +--- START KW: BuiltIn.Should Be Equal [ 2 | ${number} ]
+20170303 05:42:32.204 - INFO - +--- END KW: BuiltIn.Should Be Equal (12)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170303 05:42:32.216 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Rainy [ ]
+20170303 05:42:32.223 - INFO - ${rainy} = true
+20170303 05:42:32.230 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Rainy (13)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170303 05:42:32.235 - INFO - +--- START KW: BuiltIn.Should Be Equal [ true | ${rainy} ]
+20170303 05:42:32.301 - INFO - +--- END KW: BuiltIn.Should Be Equal (67)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170303 05:42:32.304 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Bathrooms [ ]
+20170303 05:42:32.318 - INFO - ${bathrooms} = 3.5
+20170303 05:42:32.327 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Bathrooms (19)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170303 05:42:32.330 - INFO - +--- START KW: BuiltIn.Should Be Equal [ 3.5 | ${bathrooms} ]
+20170303 05:42:32.335 - INFO - +--- END KW: BuiltIn.Should Be Equal (6)
+------------------------------------------------------------------------------
+20170303 05:42:32.340 - INFO - +-- END TEST: Test Absurd Program Normal Function (234)
+------------------------------------------------------------------------------
+20170303 05:42:32.360 - INFO - +- END SUITE: Acceptancetest.ArgumentParserTest (659)
+==============================================================================
+20170303 05:42:32.384 - INFO - +- START SUITE: Acceptancetest.Feature2 [ ]
+==============================================================================
+20170303 05:42:32.395 - INFO - +-- START TEST: Test Usage Message [ ]
+------------------------------------------------------------------------------
+20170303 05:42:32.404 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Start Program With Arguments [ -h ]
+20170303 05:42:32.410 - INFO - edu.jsu.mcis.Argument@7556ddd2
+20170303 05:42:32.413 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Start Program With Arguments (7)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170303 05:42:32.414 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Program Output [ ]
+20170303 05:42:32.417 - INFO - ${output} = None
+20170303 05:42:32.420 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Program Output (4)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20170303 05:42:32.421 - INFO - +--- START KW: BuiltIn.Should Be Equal [ ${expected} | ${output} ]
+20170303 05:42:32.427 - FAIL - usage: java VolumeCalculator length width height
+Calcuate the volume of a box.
+positional arguments:
+length the length of the box (float)
+width the width of the box(float)
+height the height of the box(float) != None
+20170303 05:42:32.429 - DEBUG - Traceback (most recent call last):
+  None
+20170303 05:42:32.430 - INFO - +--- END KW: BuiltIn.Should Be Equal (8)
+------------------------------------------------------------------------------
+20170303 05:42:32.445 - INFO - +-- END TEST: Test Usage Message (44)
+------------------------------------------------------------------------------
+20170303 05:42:32.464 - INFO - +- END SUITE: Acceptancetest.Feature2 (89)
+==============================================================================
+20170303 05:42:32.484 - INFO - + END SUITE: Acceptancetest (1213)
+>>>>>>> 7acd99449022119232611bfca25712ffde9a112f
 ==============================================================================

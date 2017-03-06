@@ -31,6 +31,7 @@ public class ArgumentParser{
 		listArgs.add(arg);
 	}
 	
+<<<<<<< HEAD
 	public void parse(String[] arg){ 
 		String name = "";
 		String extra = "";
@@ -52,6 +53,11 @@ public class ArgumentParser{
 					//System.out.println( "" + e.getHelpMessage());
 				}
 				
+=======
+	public void parse(String[] arg){
+		if(listArgs.size()!= arg.length){
+			getErrorMessage(arg);
+>>>>>>> 7acd99449022119232611bfca25712ffde9a112f
 		}
 		
 		else if (arg.length > listArgs.size()){
