@@ -6,12 +6,13 @@ import java.io.*;
 
 public class ArgumentParserKeywords {
 	private ArgumentParser pa;
-	boolean error; 
-	boolean help;
+	String help;
+	boolean error;
+	boolean helpError;
+	
 	
 	public void StartVolumeCalculatorWithArguments(String[] args){
 		pa = new ArgumentParser();
-		error = false;
 		pa.setProgramName("VolumeCalculator");
 		pa.addArg("length", "", Argument.Type.STRING);
 		pa.addArg("width", "", Argument.Type.STRING);
@@ -45,12 +46,11 @@ public class ArgumentParserKeywords {
 			return pa.getMessage();
 		}
 		
-		else if (help == true){
-			pa.helpMessage();
+		else if (helpError == true){
 			return pa.getHelpMessage();
-		}	
+		}
 		
-		else{
+		else {
 			int length = Integer.parseInt(getLength());
 			int width = Integer.parseInt(getWidth());
 			int height = Integer.parseInt(getHeight());
@@ -60,6 +60,7 @@ public class ArgumentParserKeywords {
 			return Integer.toString(volume);
 		}
 	}
+	
 	public void StartAbsurdProgramWithArguments(String[] args){
 		pa = new ArgumentParser();
 		error = false;
@@ -91,17 +92,16 @@ public class ArgumentParserKeywords {
 	
 	public void StartProgramWithArguments(String[] args){
 		pa = new ArgumentParser();
-		help = false;
+		helpError = false;
 				
 		pa.addArg("-h", "", Argument.Type.STRING);
-		help = true;
 		
-		if(pa.getArg("-h").getName().equals("-h")){
-		pa.helpMessage();
+		try{
+			pa.parse(args);
+		}
+		catch(HelpMessageException e){
+			System.out.println("" + e.getHelpMessage());
 		}
 	}
 	
-	public String getHelpMessage(){
-		return pa.getArg("-h").toString();
-	}
 }

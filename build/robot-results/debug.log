@@ -1,131 +1,240 @@
 ==============================================================================
-20170302 20:10:18.043 - INFO - + START SUITE: Acceptancetest [ ]
+20170306 15:58:45.706 - INFO - + START SUITE: Acceptancetest [ ]
 ==============================================================================
-20170302 20:10:18.309 - INFO - +- START SUITE: Acceptancetest.ArgumentParserTest [ ]
+20170306 15:58:46.034 - INFO - +- START SUITE: Acceptancetest.ArgumentParserTest [ ]
 ==============================================================================
-20170302 20:10:18.324 - INFO - +-- START TEST: Test Volume Calculator Normal Function [ ]
+20170306 15:58:46.065 - INFO - +-- START TEST: Test Volume Calculator Normal Function [ ]
 ------------------------------------------------------------------------------
-20170302 20:10:18.340 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Start Volume Calculator With Arguments [ 7 | 5 | 2 ]
-20170302 20:10:18.356 - INFO - edu.jsu.mcis.Argument@8c15266
-edu.jsu.mcis.Argument@3c6764df
-edu.jsu.mcis.Argument@1fe5c5fb
-20170302 20:10:18.371 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Start Volume Calculator With Arguments (16)
+20170306 15:58:46.128 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Start Volume Calculator With Arguments [ 7 | 5 | 2 ]
+20170306 15:58:46.174 - INFO - edu.jsu.mcis.Argument@2384b8c9
+edu.jsu.mcis.Argument@54a72238
+edu.jsu.mcis.Argument@4068655c
+20170306 15:58:46.206 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Start Volume Calculator With Arguments (94)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170302 20:10:18.387 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Length [ ]
-20170302 20:10:18.371 - WARN - Keyword 'Get Length' found both from a custom test library 'keywords.ArgumentParserKeywords' and a standard library 'BuiltIn'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'keywords.ArgumentParserKeywords.Get Length' or 'BuiltIn.Get Length'.
-20170302 20:10:18.387 - INFO - ${length} = 7
-20170302 20:10:18.403 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Length (16)
+20170306 15:58:46.221 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Length [ ]
+20170306 15:58:46.206 - WARN - Keyword 'Get Length' found both from a custom test library 'keywords.ArgumentParserKeywords' and a standard library 'BuiltIn'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'keywords.ArgumentParserKeywords.Get Length' or 'BuiltIn.Get Length'.
+20170306 15:58:46.253 - INFO - ${length} = 7
+20170306 15:58:46.253 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Length (47)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170302 20:10:18.403 - INFO - +--- START KW: BuiltIn.Should Be Equal [ 7 | ${length} ]
-20170302 20:10:18.434 - INFO - +--- END KW: BuiltIn.Should Be Equal (31)
+20170306 15:58:46.268 - INFO - +--- START KW: BuiltIn.Should Be Equal [ 7 | ${length} ]
+20170306 15:58:46.284 - INFO - +--- END KW: BuiltIn.Should Be Equal (31)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170302 20:10:18.434 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Width [ ]
-20170302 20:10:18.434 - INFO - ${width} = 5
-20170302 20:10:18.449 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Width (15)
+20170306 15:58:46.299 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Width [ ]
+20170306 15:58:46.315 - INFO - ${width} = 5
+20170306 15:58:46.331 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Width (47)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170302 20:10:18.449 - INFO - +--- START KW: BuiltIn.Should Be Equal [ 5 | ${width} ]
-20170302 20:10:18.449 - INFO - +--- END KW: BuiltIn.Should Be Equal (0)
+20170306 15:58:46.331 - INFO - +--- START KW: BuiltIn.Should Be Equal [ 5 | ${width} ]
+20170306 15:58:46.393 - INFO - +--- END KW: BuiltIn.Should Be Equal (62)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170302 20:10:18.465 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Height [ ]
-20170302 20:10:18.481 - INFO - ${height} = 2
-20170302 20:10:18.481 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Height (16)
+20170306 15:58:46.393 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Height [ ]
+20170306 15:58:46.409 - INFO - ${height} = 2
+20170306 15:58:46.424 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Height (16)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170302 20:10:18.496 - INFO - +--- START KW: BuiltIn.Should Be Equal [ 2 | ${height} ]
-20170302 20:10:18.496 - INFO - +--- END KW: BuiltIn.Should Be Equal (0)
+20170306 15:58:46.424 - INFO - +--- START KW: BuiltIn.Should Be Equal [ 2 | ${height} ]
+20170306 15:58:46.440 - INFO - +--- END KW: BuiltIn.Should Be Equal (16)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170302 20:10:18.496 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Program Output [ ]
-20170302 20:10:18.512 - INFO - ${output} = 70
-20170302 20:10:18.512 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Program Output (16)
+20170306 15:58:46.456 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Program Output [ ]
+20170306 15:58:46.487 - INFO - ${output} = 70
+20170306 15:58:46.487 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Program Output (31)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170302 20:10:18.512 - INFO - +--- START KW: BuiltIn.Should Be Equal [ ${output} | 70 ]
-20170302 20:10:18.528 - INFO - +--- END KW: BuiltIn.Should Be Equal (16)
+20170306 15:58:46.503 - INFO - +--- START KW: BuiltIn.Should Be Equal [ ${output} | 70 ]
+20170306 15:58:46.534 - INFO - +--- END KW: BuiltIn.Should Be Equal (15)
 ------------------------------------------------------------------------------
-20170302 20:10:18.543 - INFO - +-- END TEST: Test Volume Calculator Normal Function (204)
+20170306 15:58:46.549 - INFO - +-- END TEST: Test Volume Calculator Normal Function (469)
 ------------------------------------------------------------------------------
-20170302 20:10:18.543 - INFO - +-- START TEST: Test Unrecognized Argument [ ]
+20170306 15:58:46.565 - INFO - +-- START TEST: Test Unrecognized Argument [ ]
 ------------------------------------------------------------------------------
-20170302 20:10:18.559 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Start Volume Calculator With Arguments [ 7 | 5 | 2 | 43 ]
-20170302 20:10:18.606 - INFO - edu.jsu.mcis.Argument@15b30de0
-edu.jsu.mcis.Argument@7706fd6d
-edu.jsu.mcis.Argument@4cea534
-20170302 20:10:18.606 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Start Volume Calculator With Arguments (47)
+20170306 15:58:46.581 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Start Volume Calculator With Arguments [ 7 | 5 | 2 | 43 ]
+20170306 15:58:46.674 - INFO - edu.jsu.mcis.Argument@5658498e
+edu.jsu.mcis.Argument@3911a96d
+edu.jsu.mcis.Argument@64034faa
+20170306 15:58:46.721 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Start Volume Calculator With Arguments (125)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170302 20:10:18.606 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Program Output [ ]
-20170302 20:10:18.715 - INFO - ${output} = 70
-20170302 20:10:18.715 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Program Output (109)
+20170306 15:58:46.721 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Program Output [ ]
+20170306 15:58:46.753 - INFO - ${output} = 70
+20170306 15:58:46.753 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Program Output (32)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170302 20:10:18.731 - INFO - +--- START KW: BuiltIn.Should Be Equal [ ${output} | 70 ]
-20170302 20:10:18.731 - INFO - +--- END KW: BuiltIn.Should Be Equal (16)
+20170306 15:58:46.784 - INFO - +--- START KW: BuiltIn.Should Be Equal [ ${output} | 70 ]
+20170306 15:58:46.831 - INFO - +--- END KW: BuiltIn.Should Be Equal (47)
 ------------------------------------------------------------------------------
-20170302 20:10:18.778 - INFO - +-- END TEST: Test Unrecognized Argument (188)
+20170306 15:58:46.846 - INFO - +-- END TEST: Test Unrecognized Argument (266)
 ------------------------------------------------------------------------------
-20170302 20:10:18.793 - INFO - +-- START TEST: Test Absurd Program Normal Function [ ]
+20170306 15:58:46.862 - INFO - +-- START TEST: Test Absurd Program Normal Function [ ]
 ------------------------------------------------------------------------------
-20170302 20:10:18.809 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Start Absurd Program With Arguments [ dog | 2 | true | 3.5 ]
-20170302 20:10:18.856 - INFO - edu.jsu.mcis.Argument@b4c1ed7
-edu.jsu.mcis.Argument@462ff17e
-edu.jsu.mcis.Argument@7628bc75
-edu.jsu.mcis.Argument@41943649
-20170302 20:10:18.871 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Start Absurd Program With Arguments (47)
+20170306 15:58:46.878 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Start Absurd Program With Arguments [ dog | 2 | true | 3.5 ]
+20170306 15:58:46.909 - INFO - edu.jsu.mcis.Argument@536bcc9e
+edu.jsu.mcis.Argument@6400751b
+edu.jsu.mcis.Argument@3b658d32
+edu.jsu.mcis.Argument@6d84c9a1
+20170306 15:58:46.971 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Start Absurd Program With Arguments (93)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170302 20:10:18.871 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Pet [ ]
-20170302 20:10:18.871 - INFO - ${pet} = dog
-20170302 20:10:18.887 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Pet (0)
+20170306 15:58:46.971 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Pet [ ]
+20170306 15:58:46.987 - INFO - ${pet} = dog
+20170306 15:58:47.003 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Pet (16)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170302 20:10:18.887 - INFO - +--- START KW: BuiltIn.Should Be Equal [ dog | ${pet} ]
-20170302 20:10:18.903 - INFO - +--- END KW: BuiltIn.Should Be Equal (16)
+20170306 15:58:47.003 - INFO - +--- START KW: BuiltIn.Should Be Equal [ dog | ${pet} ]
+20170306 15:58:47.018 - INFO - +--- END KW: BuiltIn.Should Be Equal (15)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170302 20:10:18.903 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Number [ ]
-20170302 20:10:18.918 - INFO - ${number} = 2
-20170302 20:10:18.918 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Number (15)
+20170306 15:58:47.018 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Number [ ]
+20170306 15:58:47.034 - INFO - ${number} = 2
+20170306 15:58:47.049 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Number (31)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170302 20:10:18.918 - INFO - +--- START KW: BuiltIn.Should Be Equal [ 2 | ${number} ]
-20170302 20:10:18.934 - INFO - +--- END KW: BuiltIn.Should Be Equal (16)
+20170306 15:58:47.049 - INFO - +--- START KW: BuiltIn.Should Be Equal [ 2 | ${number} ]
+20170306 15:58:47.081 - INFO - +--- END KW: BuiltIn.Should Be Equal (16)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170302 20:10:18.934 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Rainy [ ]
-20170302 20:10:18.949 - INFO - ${rainy} = true
-20170302 20:10:18.949 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Rainy (15)
+20170306 15:58:47.081 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Rainy [ ]
+20170306 15:58:47.081 - INFO - ${rainy} = true
+20170306 15:58:47.159 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Rainy (62)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170302 20:10:18.949 - INFO - +--- START KW: BuiltIn.Should Be Equal [ true | ${rainy} ]
-20170302 20:10:18.965 - INFO - +--- END KW: BuiltIn.Should Be Equal (16)
+20170306 15:58:47.159 - INFO - +--- START KW: BuiltIn.Should Be Equal [ true | ${rainy} ]
+20170306 15:58:47.190 - INFO - +--- END KW: BuiltIn.Should Be Equal (31)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170302 20:10:18.965 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Bathrooms [ ]
-20170302 20:10:18.981 - INFO - ${bathrooms} = 3.5
-20170302 20:10:18.981 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Bathrooms (16)
+20170306 15:58:47.190 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Bathrooms [ ]
+20170306 15:58:47.206 - INFO - ${bathrooms} = 3.5
+20170306 15:58:47.206 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Bathrooms (16)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170302 20:10:18.981 - INFO - +--- START KW: BuiltIn.Should Be Equal [ 3.5 | ${bathrooms} ]
-20170302 20:10:18.996 - INFO - +--- END KW: BuiltIn.Should Be Equal (15)
+20170306 15:58:47.206 - INFO - +--- START KW: BuiltIn.Should Be Equal [ 3.5 | ${bathrooms} ]
+20170306 15:58:47.237 - INFO - +--- END KW: BuiltIn.Should Be Equal (31)
 ------------------------------------------------------------------------------
-20170302 20:10:19.012 - INFO - +-- END TEST: Test Absurd Program Normal Function (218)
+20170306 15:58:47.253 - INFO - +-- END TEST: Test Absurd Program Normal Function (407)
 ------------------------------------------------------------------------------
-20170302 20:10:19.043 - INFO - +- END SUITE: Acceptancetest.ArgumentParserTest (953)
+20170306 15:58:47.393 - INFO - +- END SUITE: Acceptancetest.ArgumentParserTest (1531)
 ==============================================================================
-20170302 20:10:19.184 - INFO - +- START SUITE: Acceptancetest.Feature2 [ ]
+20170306 15:58:47.518 - INFO - +- START SUITE: Acceptancetest.Feature2 [ ]
 ==============================================================================
-20170302 20:10:19.215 - INFO - +-- START TEST: Test Usage Message [ ]
+20170306 15:58:47.534 - INFO - +-- START TEST: Test Usage Message [ ]
 ------------------------------------------------------------------------------
-20170302 20:10:19.231 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Start Program With Arguments [ -h ]
-20170302 20:10:19.231 - INFO - edu.jsu.mcis.Argument@3a95e8f6
-20170302 20:10:19.231 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Start Program With Arguments (0)
+20170306 15:58:47.550 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Start Program With Arguments [ -h ]
+20170306 15:58:47.565 - INFO - edu.jsu.mcis.Argument@15ff7ce8
+20170306 15:58:47.581 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Start Program With Arguments (31)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170302 20:10:19.246 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Program Output [ ]
-20170302 20:10:19.246 - INFO - ${output} = None
-20170302 20:10:19.246 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Program Output (0)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-20170302 20:10:19.262 - INFO - +--- START KW: BuiltIn.Should Be Equal [ ${expected} | ${output} ]
-20170302 20:10:19.309 - FAIL - usage: java VolumeCalculator length width height
-Calcuate the volume of a box.
-positional arguments:
-length the length of the box (float)
-width the width of the box(float)
-height the height of the box(float) != None
-20170302 20:10:19.324 - DEBUG - Traceback (most recent call last):
-  None
-20170302 20:10:19.340 - INFO - +--- END KW: BuiltIn.Should Be Equal (78)
+20170306 15:58:47.581 - INFO - +--- START KW: keywords.ArgumentParserKeywords.Get Program Output [ ]
+20170306 15:58:47.753 - FAIL - NullPointerException
+20170306 15:58:47.753 - DEBUG - java.lang.NullPointerException
+	at keywords.ArgumentParserKeywords.getLength(ArgumentParserKeywords.java:41)
+	at keywords.ArgumentParserKeywords.getProgramOutput(ArgumentParserKeywords.java:54)
+	at robot.model.testcase$py.visit$7(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/model/testcase.py:73)
+	at robot.model.testcase$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/model/testcase.py)
+	at robot.model.itemlist$py.visit$10(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/model/itemlist.py:68)
+	at robot.model.itemlist$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/model/itemlist.py)
+	at robot.model.visitor$py.visit_suite$2(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/model/visitor.py:87)
+	at robot.model.visitor$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/model/visitor.py)
+	at robot.model.testsuite$py.visit$19(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/model/testsuite.py:160)
+	at robot.model.testsuite$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/model/testsuite.py)
+	at robot.model.itemlist$py.visit$10(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/model/itemlist.py:68)
+	at robot.model.itemlist$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/model/itemlist.py)
+	at robot.model.visitor$py.visit_suite$2(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/model/visitor.py:87)
+	at robot.model.visitor$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/model/visitor.py)
+	at robot.model.testsuite$py.visit$19(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/model/testsuite.py:160)
+	at robot.model.testsuite$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/model/testsuite.py)
+	at robot.run$py.main$3(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/run.py:441)
+	at robot.run$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/run.py)
+	at robot.utils.application$py._execute$10(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/utils/application.py:91)
+	at robot.utils.application$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/utils/application.py)
+	at robot.utils.application$py.execute_cli$5(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/utils/application.py:46)
+	at robot.utils.application$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/utils/application.py)
+	at robot.run$py.run_cli$7(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/run.py:466)
+	at robot.run$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/run.py)
+	at robot.jarrunner$py._run$3(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/jarrunner.py:63)
+	at robot.jarrunner$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/jarrunner.py)
+	at robot.jarrunner$py.run$2(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/jarrunner.py:56)
+	at robot.jarrunner$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/build/Lib/robot/jarrunner.py)
+	at org.robotframework.RobotRunner.run(RobotRunner.java:73)
+	at org.robotframework.RobotFramework.run(RobotFramework.java:60)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite.invoke(StaticMetaMethodSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite.call(StaticMetaMethodSite.java:91)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.roboscratch.gradle.RunRobot.run(RunRobot.groovy:184)
+	at org.gradle.internal.reflect.JavaMethod.invoke(JavaMethod.java:73)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.doExecute(DefaultTaskClassInfoStore.java:141)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:134)
+	at org.gradle.api.internal.project.taskfactory.DefaultTaskClassInfoStore$StandardTaskAction.execute(DefaultTaskClassInfoStore.java:123)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:632)
+	at org.gradle.api.internal.AbstractTask$TaskActionWrapper.execute(AbstractTask.java:615)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeAction(ExecuteActionsTaskExecuter.java:95)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.executeActions(ExecuteActionsTaskExecuter.java:76)
+	at org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.execute(ExecuteActionsTaskExecuter.java:55)
+	at org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter.execute(SkipUpToDateTaskExecuter.java:62)
+	at org.gradle.api.internal.tasks.execution.ValidatingTaskExecuter.execute(ValidatingTaskExecuter.java:58)
+	at org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter.execute(SkipEmptySourceFilesTaskExecuter.java:88)
+	at org.gradle.api.internal.tasks.execution.ResolveTaskArtifactStateTaskExecuter.execute(ResolveTaskArtifactStateTaskExecuter.java:46)
+	at org.gradle.api.internal.tasks.execution.SkipTaskWithNoActionsExecuter.execute(SkipTaskWithNoActionsExecuter.java:51)
+	at org.gradle.api.internal.tasks.execution.SkipOnlyIfTaskExecuter.execute(SkipOnlyIfTaskExecuter.java:54)
+	at org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter.execute(ExecuteAtMostOnceTaskExecuter.java:43)
+	at org.gradle.api.internal.tasks.execution.CatchExceptionTaskExecuter.execute(CatchExceptionTaskExecuter.java:34)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.execute(DefaultTaskGraphExecuter.java:236)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker$1.execute(DefaultTaskGraphExecuter.java:228)
+	at org.gradle.internal.Transformers$4.transform(Transformers.java:169)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:106)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:61)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:228)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter$EventFiringTaskWorker.execute(DefaultTaskGraphExecuter.java:215)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.processTask(AbstractTaskPlanExecutor.java:77)
+	at org.gradle.execution.taskgraph.AbstractTaskPlanExecutor$TaskExecutorWorker.run(AbstractTaskPlanExecutor.java:58)
+	at org.gradle.execution.taskgraph.DefaultTaskPlanExecutor.process(DefaultTaskPlanExecutor.java:32)
+	at org.gradle.execution.taskgraph.DefaultTaskGraphExecuter.execute(DefaultTaskGraphExecuter.java:113)
+	at org.gradle.execution.SelectedTaskExecutionAction.execute(SelectedTaskExecutionAction.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.access$000(DefaultBuildExecuter.java:23)
+	at org.gradle.execution.DefaultBuildExecuter$1.proceed(DefaultBuildExecuter.java:43)
+	at org.gradle.execution.DryRunBuildExecutionAction.execute(DryRunBuildExecutionAction.java:32)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:37)
+	at org.gradle.execution.DefaultBuildExecuter.execute(DefaultBuildExecuter.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher$3.execute(DefaultGradleLauncher.java:196)
+	at org.gradle.initialization.DefaultGradleLauncher$3.execute(DefaultGradleLauncher.java:193)
+	at org.gradle.internal.Transformers$4.transform(Transformers.java:169)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:106)
+	at org.gradle.internal.progress.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:56)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:193)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuild(DefaultGradleLauncher.java:119)
+	at org.gradle.initialization.DefaultGradleLauncher.run(DefaultGradleLauncher.java:102)
+	at org.gradle.launcher.exec.GradleBuildController.run(GradleBuildController.java:71)
+	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:28)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:41)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:26)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:75)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:49)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:44)
+	at org.gradle.tooling.internal.provider.ServicesSetupBuildActionExecuter.execute(ServicesSetupBuildActionExecuter.java:29)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:67)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:47)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:26)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:34)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:74)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.call(ForwardClientInput.java:72)
+	at org.gradle.util.Swapper.swap(Swapper.java:38)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:72)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.LogAndCheckHealth.execute(LogAndCheckHealth.java:55)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:60)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:72)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:36)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:120)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:50)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:297)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+20170306 15:58:47.753 - INFO - +--- END KW: keywords.ArgumentParserKeywords.Get Program Output (172)
 ------------------------------------------------------------------------------
-20170302 20:10:19.340 - INFO - +-- END TEST: Test Usage Message (141)
+20170306 15:58:47.784 - INFO - +-- END TEST: Test Usage Message (234)
 ------------------------------------------------------------------------------
-20170302 20:10:19.387 - INFO - +- END SUITE: Acceptancetest.Feature2 (297)
+20170306 15:58:47.815 - INFO - +- END SUITE: Acceptancetest.Feature2 (407)
 ==============================================================================
-20170302 20:10:19.434 - INFO - + END SUITE: Acceptancetest (3250)
+20170306 15:58:47.893 - INFO - + END SUITE: Acceptancetest (3453)
 ==============================================================================
