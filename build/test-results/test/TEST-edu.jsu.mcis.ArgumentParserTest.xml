@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.jsu.mcis.ArgumentParserTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-03-08T19:15:59" hostname="Nicholas-PC" time="0.01">
+  <properties/>
+  <testcase name="testTooManyArgs" classname="edu.jsu.mcis.ArgumentParserTest" time="0.007"/>
+  <testcase name="testParse" classname="edu.jsu.mcis.ArgumentParserTest" time="0.001"/>
+  <testcase name="testAddArgMultArguments" classname="edu.jsu.mcis.ArgumentParserTest" time="0.001"/>
+  <testcase name="testArgument" classname="edu.jsu.mcis.ArgumentParserTest" time="0.0"/>
+  <testcase name="testTooFewArgs" classname="edu.jsu.mcis.ArgumentParserTest" time="0.001"/>
+  <testcase name="testAddArgArgument" classname="edu.jsu.mcis.ArgumentParserTest" time="0.0"/>
+  <system-out><![CDATA[edu.jsu.mcis.Argument@6019b323
+edu.jsu.mcis.Argument@6eeedd0a
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
