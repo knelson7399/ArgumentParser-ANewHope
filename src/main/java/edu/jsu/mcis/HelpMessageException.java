@@ -2,6 +2,7 @@ package edu.jsu.mcis;
 
 
 public class HelpMessageException extends RuntimeException {
+	public static final long serialVersionUID = 42L;
 	private String help; 
 
     public HelpMessageException () {
@@ -11,7 +12,8 @@ public class HelpMessageException extends RuntimeException {
 	public HelpMessageException (String message) {
 		super (message);
 	}
-	public String getHelpMessage(){
+	@Override
+	public String getMessage(){
 		return help;
 	}
     

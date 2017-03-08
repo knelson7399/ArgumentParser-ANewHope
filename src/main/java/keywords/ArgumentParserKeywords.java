@@ -100,8 +100,9 @@ public class ArgumentParserKeywords {
 			pa.parse(args);
 		}
 		catch(HelpMessageException e){
-			System.out.println("" + e.getHelpMessage());
+			System.out.println("" + e.getMessage());
 		}
 	}
+	
 	
 }

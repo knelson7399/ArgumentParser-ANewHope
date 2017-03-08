@@ -1,27 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testsuite name="edu.jsu.mcis.ArgumentParserTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-03-06T21:57:57" hostname="LAPTOP-NHA48JL9" time="0.062">
+<testsuite name="edu.jsu.mcis.ArgumentParserTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-03-08T17:22:43" hostname="DESKTOP-KKQSDBO" time="0.051">
   <properties/>
   <testcase name="testTooManyArgs" classname="edu.jsu.mcis.ArgumentParserTest" time="0.015"/>
-  <testcase name="testParse" classname="edu.jsu.mcis.ArgumentParserTest" time="0.016"/>
-  <testcase name="testAddArgMultArguments" classname="edu.jsu.mcis.ArgumentParserTest" time="0.015"/>
-=======
-<testsuite name="edu.jsu.mcis.ArgumentParserTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-03-03T11:42:10" hostname="Dikoko" time="0.007">
-  <properties/>
-  <testcase name="testTooManyArgs" classname="edu.jsu.mcis.ArgumentParserTest" time="0.004"/>
-  <testcase name="testParse" classname="edu.jsu.mcis.ArgumentParserTest" time="0.0"/>
-  <testcase name="testAddArgMultArguments" classname="edu.jsu.mcis.ArgumentParserTest" time="0.001"/>
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
-  <testcase name="testArgument" classname="edu.jsu.mcis.ArgumentParserTest" time="0.0"/>
-  <testcase name="testTooFewArgs" classname="edu.jsu.mcis.ArgumentParserTest" time="0.016"/>
-  <testcase name="testAddArgArgument" classname="edu.jsu.mcis.ArgumentParserTest" time="0.0"/>
-<<<<<<< HEAD
-  <system-out><![CDATA[edu.jsu.mcis.Argument@4ddc7072
-edu.jsu.mcis.Argument@2e6c5419
-=======
-  <system-out><![CDATA[edu.jsu.mcis.Argument@36ab215c
-edu.jsu.mcis.Argument@4f6b5d88
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+  <testcase name="testParse" classname="edu.jsu.mcis.ArgumentParserTest" time="0.001"/>
+  <testcase name="testAddArgMultArguments" classname="edu.jsu.mcis.ArgumentParserTest" time="0.007"/>
+  <testcase name="testArgument" classname="edu.jsu.mcis.ArgumentParserTest" time="0.003"/>
+  <testcase name="testTooFewArgs" classname="edu.jsu.mcis.ArgumentParserTest" time="0.002"/>
+  <testcase name="testAddArgArgument" classname="edu.jsu.mcis.ArgumentParserTest" time="0.002"/>
+  <system-out><![CDATA[edu.jsu.mcis.Argument@18b6c3b7
+edu.jsu.mcis.Argument@14fa75
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -3,11 +3,12 @@ package edu.jsu.mcis;
 import java.lang.*;
 import java.util.*;
 import java.io.*;
-import edu.jsu.mcis.HelpMessageException;
+//import edu.jsu.mcis.HelpMessageException;
+//import edu.jsu.mcis.HelpMessageException;
 
 
 public class ArgumentParser{
-	private List<Argument> listArgs;
+    final List<Argument> listArgs;
     private String programName;
     private String programDescription;
 	private String help;
@@ -30,9 +31,7 @@ public class ArgumentParser{
 	public void addArg(Argument arg){
 		listArgs.add(arg);
 	}
-	
-<<<<<<< HEAD
-	public void parse(String[] arg){ 
+	public void parse(String[] arg) throws RuntimeException{ 
 		String name = "";
 		String extra = "";
 		String less = "";
@@ -49,17 +48,10 @@ public class ArgumentParser{
 					addArg("-h", "", Argument.Type.STRING);
 				}
 				catch(HelpMessageException e){
-					throw new HelpMessageException();
-					//System.out.println( "" + e.getHelpMessage());
+					//throw new HelpMessageException();
+					System.out.println( "" + e.getMessage());
 				}
-				
-=======
-	public void parse(String[] arg){
-		if(listArgs.size()!= arg.length){
-			getErrorMessage(arg);
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
 		}
-		
 		else if (arg.length > listArgs.size()){
 			for (int i = listArgs.size(); i < arg.length; i++){
 				extra += arg[i] + " "  ;
@@ -141,16 +133,4 @@ public class ArgumentParser{
 		return help;
 	}
 	
-	public static void main (String[] args){
-		ArgumentParser pa = new ArgumentParser();
-		Argument ga = new Argument();
-		ga.setName("-h");
-		pa.addArg(ga);
-		String[] myArgs = {"-h"};
-		pa.parse(myArgs);
-		Argument temp = new Argument();
-		temp = pa.getArg("-h");
-		System.out.println(temp);
-	
-	}
 }

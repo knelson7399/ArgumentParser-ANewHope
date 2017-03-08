@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<robot generator="Robot 3.0 (Jython 2.7.0 on java1.8.0_121)" generated="20170306 15:58:44.268">
-<suite source="C:\Users\Sarah\Desktop\CS 310\ArgumentParser-ANewHope\src\test\acceptancetest" name="Acceptancetest" id="s1">
-<suite source="C:\Users\Sarah\Desktop\CS 310\ArgumentParser-ANewHope\src\test\acceptancetest\ArgumentParserTest.robot" name="ArgumentParserTest" id="s1-s1">
-=======
-<robot generator="Robot 3.0 (Jython 2.7.0 on java1.8.0_121)" generated="20170303 05:42:31.241">
-<suite source="C:\Users\Clement Dikoko\Desktop\Software Engineering\Group Project\ArgumentParser-ANewHope\src\test\acceptancetest" name="Acceptancetest" id="s1">
-<suite source="C:\Users\Clement Dikoko\Desktop\Software Engineering\Group Project\ArgumentParser-ANewHope\src\test\acceptancetest\ArgumentParserTest.robot" name="ArgumentParserTest" id="s1-s1">
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+<robot generator="Robot 3.0 (Jython 2.7.0 on java1.8.0_73)" generated="20170308 11:23:19.233">
+<suite source="C:\Users\Chelsea\Documents\GitHub\ArgumentParser-ANewHope\src\test\acceptancetest" name="Acceptancetest" id="s1">
+<suite source="C:\Users\Chelsea\Documents\GitHub\ArgumentParser-ANewHope\src\test\acceptancetest\ArgumentParserTest.robot" name="ArgumentParserTest" id="s1-s1">
 <test name="Test Volume Calculator Normal Function" id="s1-s1-t1">
 <kw library="keywords.ArgumentParserKeywords" name="Start Volume Calculator With Arguments">
 <arguments>
@@ -15,31 +9,18 @@
 <arg>5</arg>
 <arg>2</arg>
 </arguments>
-<<<<<<< HEAD
-<msg level="INFO" timestamp="20170306 15:58:46.174">edu.jsu.mcis.Argument@2384b8c9
-edu.jsu.mcis.Argument@54a72238
-edu.jsu.mcis.Argument@4068655c</msg>
-<status endtime="20170306 15:58:46.206" starttime="20170306 15:58:46.112" status="PASS"></status>
-=======
-<msg level="INFO" timestamp="20170303 05:42:31.832">edu.jsu.mcis.Argument@5428b907
-edu.jsu.mcis.Argument@4175db2b
-edu.jsu.mcis.Argument@2100d2ba</msg>
-<status endtime="20170303 05:42:31.844" starttime="20170303 05:42:31.817" status="PASS"></status>
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+<msg level="INFO" timestamp="20170308 11:23:20.382">edu.jsu.mcis.Argument@667bdd82
+edu.jsu.mcis.Argument@7a1b83ed
+edu.jsu.mcis.Argument@538e8602</msg>
+<status endtime="20170308 11:23:20.393" starttime="20170308 11:23:20.358" status="PASS"></status>
 </kw>
 <kw library="keywords.ArgumentParserKeywords" name="Get Length">
 <assign>
 <var>${length}</var>
 </assign>
-<<<<<<< HEAD
-<msg level="WARN" timestamp="20170306 15:58:46.206">Keyword 'Get Length' found both from a custom test library 'keywords.ArgumentParserKeywords' and a standard library 'BuiltIn'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'keywords.ArgumentParserKeywords.Get Length' or 'BuiltIn.Get Length'.</msg>
-<msg level="INFO" timestamp="20170306 15:58:46.253">${length} = 7</msg>
-<status endtime="20170306 15:58:46.253" starttime="20170306 15:58:46.206" status="PASS"></status>
-=======
-<msg level="WARN" timestamp="20170303 05:42:31.848">Keyword 'Get Length' found both from a custom test library 'keywords.ArgumentParserKeywords' and a standard library 'BuiltIn'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'keywords.ArgumentParserKeywords.Get Length' or 'BuiltIn.Get Length'.</msg>
-<msg level="INFO" timestamp="20170303 05:42:31.871">${length} = 7</msg>
-<status endtime="20170303 05:42:31.873" starttime="20170303 05:42:31.849" status="PASS"></status>
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+<msg level="WARN" timestamp="20170308 11:23:20.401">Keyword 'Get Length' found both from a custom test library 'keywords.ArgumentParserKeywords' and a standard library 'BuiltIn'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'keywords.ArgumentParserKeywords.Get Length' or 'BuiltIn.Get Length'.</msg>
+<msg level="INFO" timestamp="20170308 11:23:20.432">${length} = 7</msg>
+<status endtime="20170308 11:23:20.435" starttime="20170308 11:23:20.413" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -47,23 +28,14 @@ edu.jsu.mcis.Argument@2100d2ba</msg>
 <arg>7</arg>
 <arg>${length}</arg>
 </arguments>
-<<<<<<< HEAD
-<status endtime="20170306 15:58:46.284" starttime="20170306 15:58:46.253" status="PASS"></status>
-=======
-<status endtime="20170303 05:42:31.889" starttime="20170303 05:42:31.878" status="PASS"></status>
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+<status endtime="20170308 11:23:20.459" starttime="20170308 11:23:20.439" status="PASS"></status>
 </kw>
 <kw library="keywords.ArgumentParserKeywords" name="Get Width">
 <assign>
 <var>${width}</var>
 </assign>
-<<<<<<< HEAD
-<msg level="INFO" timestamp="20170306 15:58:46.315">${width} = 5</msg>
-<status endtime="20170306 15:58:46.331" starttime="20170306 15:58:46.284" status="PASS"></status>
-=======
-<msg level="INFO" timestamp="20170303 05:42:31.904">${width} = 5</msg>
-<status endtime="20170303 05:42:31.906" starttime="20170303 05:42:31.899" status="PASS"></status>
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+<msg level="INFO" timestamp="20170308 11:23:20.487">${width} = 5</msg>
+<status endtime="20170308 11:23:20.493" starttime="20170308 11:23:20.464" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -71,23 +43,14 @@ edu.jsu.mcis.Argument@2100d2ba</msg>
 <arg>5</arg>
 <arg>${width}</arg>
 </arguments>
-<<<<<<< HEAD
-<status endtime="20170306 15:58:46.393" starttime="20170306 15:58:46.331" status="PASS"></status>
-=======
-<status endtime="20170303 05:42:31.934" starttime="20170303 05:42:31.913" status="PASS"></status>
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+<status endtime="20170308 11:23:20.531" starttime="20170308 11:23:20.497" status="PASS"></status>
 </kw>
 <kw library="keywords.ArgumentParserKeywords" name="Get Height">
 <assign>
 <var>${height}</var>
 </assign>
-<<<<<<< HEAD
-<msg level="INFO" timestamp="20170306 15:58:46.409">${height} = 2</msg>
-<status endtime="20170306 15:58:46.409" starttime="20170306 15:58:46.393" status="PASS"></status>
-=======
-<msg level="INFO" timestamp="20170303 05:42:31.951">${height} = 2</msg>
-<status endtime="20170303 05:42:31.956" starttime="20170303 05:42:31.943" status="PASS"></status>
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+<msg level="INFO" timestamp="20170308 11:23:20.548">${height} = 2</msg>
+<status endtime="20170308 11:23:20.555" starttime="20170308 11:23:20.540" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -95,23 +58,14 @@ edu.jsu.mcis.Argument@2100d2ba</msg>
 <arg>2</arg>
 <arg>${height}</arg>
 </arguments>
-<<<<<<< HEAD
-<status endtime="20170306 15:58:46.440" starttime="20170306 15:58:46.424" status="PASS"></status>
-=======
-<status endtime="20170303 05:42:31.992" starttime="20170303 05:42:31.966" status="PASS"></status>
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+<status endtime="20170308 11:23:20.576" starttime="20170308 11:23:20.562" status="PASS"></status>
 </kw>
 <kw library="keywords.ArgumentParserKeywords" name="Get Program Output">
 <assign>
 <var>${output}</var>
 </assign>
-<<<<<<< HEAD
-<msg level="INFO" timestamp="20170306 15:58:46.487">${output} = 70</msg>
-<status endtime="20170306 15:58:46.487" starttime="20170306 15:58:46.456" status="PASS"></status>
-=======
-<msg level="INFO" timestamp="20170303 05:42:32.000">${output} = 70</msg>
-<status endtime="20170303 05:42:32.006" starttime="20170303 05:42:31.995" status="PASS"></status>
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+<msg level="INFO" timestamp="20170308 11:23:20.597">${output} = 70</msg>
+<status endtime="20170308 11:23:20.602" starttime="20170308 11:23:20.580" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -119,15 +73,9 @@ edu.jsu.mcis.Argument@2100d2ba</msg>
 <arg>${output}</arg>
 <arg>70</arg>
 </arguments>
-<<<<<<< HEAD
-<status endtime="20170306 15:58:46.518" starttime="20170306 15:58:46.503" status="PASS"></status>
+<status endtime="20170308 11:23:20.617" starttime="20170308 11:23:20.606" status="PASS"></status>
 </kw>
-<status critical="yes" endtime="20170306 15:58:46.534" starttime="20170306 15:58:46.065" status="PASS"></status>
-=======
-<status endtime="20170303 05:42:32.020" starttime="20170303 05:42:32.015" status="PASS"></status>
-</kw>
-<status critical="yes" endtime="20170303 05:42:32.022" starttime="20170303 05:42:31.787" status="PASS"></status>
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+<status critical="yes" endtime="20170308 11:23:20.622" starttime="20170308 11:23:20.341" status="PASS"></status>
 </test>
 <test name="Test Unrecognized Argument" id="s1-s1-t2">
 <kw library="keywords.ArgumentParserKeywords" name="Start Volume Calculator With Arguments">
@@ -137,29 +85,17 @@ edu.jsu.mcis.Argument@2100d2ba</msg>
 <arg>2</arg>
 <arg>43</arg>
 </arguments>
-<<<<<<< HEAD
-<msg level="INFO" timestamp="20170306 15:58:46.674">edu.jsu.mcis.Argument@5658498e
-edu.jsu.mcis.Argument@3911a96d
-edu.jsu.mcis.Argument@64034faa</msg>
-<status endtime="20170306 15:58:46.706" starttime="20170306 15:58:46.581" status="PASS"></status>
-=======
-<msg level="INFO" timestamp="20170303 05:42:32.048">edu.jsu.mcis.Argument@4a3fd832
-edu.jsu.mcis.Argument@4c829a47
-edu.jsu.mcis.Argument@10a6e738</msg>
-<status endtime="20170303 05:42:32.078" starttime="20170303 05:42:32.041" status="PASS"></status>
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+<msg level="INFO" timestamp="20170308 11:23:20.677">edu.jsu.mcis.Argument@7d261774
+edu.jsu.mcis.Argument@1f9573fe
+edu.jsu.mcis.Argument@6cdb81ce</msg>
+<status endtime="20170308 11:23:20.688" starttime="20170308 11:23:20.659" status="PASS"></status>
 </kw>
 <kw library="keywords.ArgumentParserKeywords" name="Get Program Output">
 <assign>
 <var>${output}</var>
 </assign>
-<<<<<<< HEAD
-<msg level="INFO" timestamp="20170306 15:58:46.753">${output} = 70</msg>
-<status endtime="20170306 15:58:46.753" starttime="20170306 15:58:46.721" status="PASS"></status>
-=======
-<msg level="INFO" timestamp="20170303 05:42:32.087">${output} = 70</msg>
-<status endtime="20170303 05:42:32.088" starttime="20170303 05:42:32.082" status="PASS"></status>
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+<msg level="INFO" timestamp="20170308 11:23:20.706">${output} = 70</msg>
+<status endtime="20170308 11:23:20.708" starttime="20170308 11:23:20.693" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -167,15 +103,9 @@ edu.jsu.mcis.Argument@10a6e738</msg>
 <arg>${output}</arg>
 <arg>70</arg>
 </arguments>
-<<<<<<< HEAD
-<status endtime="20170306 15:58:46.815" starttime="20170306 15:58:46.768" status="PASS"></status>
+<status endtime="20170308 11:23:20.727" starttime="20170308 11:23:20.712" status="PASS"></status>
 </kw>
-<status critical="yes" endtime="20170306 15:58:46.831" starttime="20170306 15:58:46.565" status="PASS"></status>
-=======
-<status endtime="20170303 05:42:32.096" starttime="20170303 05:42:32.091" status="PASS"></status>
-</kw>
-<status critical="yes" endtime="20170303 05:42:32.098" starttime="20170303 05:42:32.033" status="PASS"></status>
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+<status critical="yes" endtime="20170308 11:23:20.731" starttime="20170308 11:23:20.633" status="PASS"></status>
 </test>
 <test name="Test Absurd Program Normal Function" id="s1-s1-t3">
 <kw library="keywords.ArgumentParserKeywords" name="Start Absurd Program With Arguments">
@@ -185,31 +115,18 @@ edu.jsu.mcis.Argument@10a6e738</msg>
 <arg>true</arg>
 <arg>3.5</arg>
 </arguments>
-<<<<<<< HEAD
-<msg level="INFO" timestamp="20170306 15:58:46.909">edu.jsu.mcis.Argument@536bcc9e
-edu.jsu.mcis.Argument@6400751b
-edu.jsu.mcis.Argument@3b658d32
-edu.jsu.mcis.Argument@6d84c9a1</msg>
-<status endtime="20170306 15:58:46.971" starttime="20170306 15:58:46.878" status="PASS"></status>
-=======
-<msg level="INFO" timestamp="20170303 05:42:32.134">edu.jsu.mcis.Argument@50ac39fa
-edu.jsu.mcis.Argument@4dd79bfe
-edu.jsu.mcis.Argument@5d5772ac
-edu.jsu.mcis.Argument@6d00fee7</msg>
-<status endtime="20170303 05:42:32.139" starttime="20170303 05:42:32.108" status="PASS"></status>
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+<msg level="INFO" timestamp="20170308 11:23:20.769">edu.jsu.mcis.Argument@28ffe9f4
+edu.jsu.mcis.Argument@4ffc9c2d
+edu.jsu.mcis.Argument@7821a29d
+edu.jsu.mcis.Argument@1cc63a50</msg>
+<status endtime="20170308 11:23:20.777" starttime="20170308 11:23:20.755" status="PASS"></status>
 </kw>
 <kw library="keywords.ArgumentParserKeywords" name="Get Pet">
 <assign>
 <var>${pet}</var>
 </assign>
-<<<<<<< HEAD
-<msg level="INFO" timestamp="20170306 15:58:46.987">${pet} = dog</msg>
-<status endtime="20170306 15:58:46.987" starttime="20170306 15:58:46.971" status="PASS"></status>
-=======
-<msg level="INFO" timestamp="20170303 05:42:32.151">${pet} = dog</msg>
-<status endtime="20170303 05:42:32.153" starttime="20170303 05:42:32.144" status="PASS"></status>
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+<msg level="INFO" timestamp="20170308 11:23:20.814">${pet} = dog</msg>
+<status endtime="20170308 11:23:20.819" starttime="20170308 11:23:20.781" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -217,23 +134,14 @@ edu.jsu.mcis.Argument@6d00fee7</msg>
 <arg>dog</arg>
 <arg>${pet}</arg>
 </arguments>
-<<<<<<< HEAD
-<status endtime="20170306 15:58:47.018" starttime="20170306 15:58:47.003" status="PASS"></status>
-=======
-<status endtime="20170303 05:42:32.166" starttime="20170303 05:42:32.158" status="PASS"></status>
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+<status endtime="20170308 11:23:20.838" starttime="20170308 11:23:20.824" status="PASS"></status>
 </kw>
 <kw library="keywords.ArgumentParserKeywords" name="Get Number">
 <assign>
 <var>${number}</var>
 </assign>
-<<<<<<< HEAD
-<msg level="INFO" timestamp="20170306 15:58:47.034">${number} = 2</msg>
-<status endtime="20170306 15:58:47.049" starttime="20170306 15:58:47.018" status="PASS"></status>
-=======
-<msg level="INFO" timestamp="20170303 05:42:32.177">${number} = 2</msg>
-<status endtime="20170303 05:42:32.179" starttime="20170303 05:42:32.170" status="PASS"></status>
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+<msg level="INFO" timestamp="20170308 11:23:20.876">${number} = 2</msg>
+<status endtime="20170308 11:23:20.879" starttime="20170308 11:23:20.841" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -241,23 +149,14 @@ edu.jsu.mcis.Argument@6d00fee7</msg>
 <arg>2</arg>
 <arg>${number}</arg>
 </arguments>
-<<<<<<< HEAD
-<status endtime="20170306 15:58:47.065" starttime="20170306 15:58:47.049" status="PASS"></status>
-=======
-<status endtime="20170303 05:42:32.201" starttime="20170303 05:42:32.189" status="PASS"></status>
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+<status endtime="20170308 11:23:20.896" starttime="20170308 11:23:20.886" status="PASS"></status>
 </kw>
 <kw library="keywords.ArgumentParserKeywords" name="Get Rainy">
 <assign>
 <var>${rainy}</var>
 </assign>
-<<<<<<< HEAD
-<msg level="INFO" timestamp="20170306 15:58:47.081">${rainy} = true</msg>
-<status endtime="20170306 15:58:47.143" starttime="20170306 15:58:47.081" status="PASS"></status>
-=======
-<msg level="INFO" timestamp="20170303 05:42:32.223">${rainy} = true</msg>
-<status endtime="20170303 05:42:32.229" starttime="20170303 05:42:32.216" status="PASS"></status>
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+<msg level="INFO" timestamp="20170308 11:23:20.930">${rainy} = true</msg>
+<status endtime="20170308 11:23:20.933" starttime="20170308 11:23:20.900" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -265,23 +164,14 @@ edu.jsu.mcis.Argument@6d00fee7</msg>
 <arg>true</arg>
 <arg>${rainy}</arg>
 </arguments>
-<<<<<<< HEAD
-<status endtime="20170306 15:58:47.190" starttime="20170306 15:58:47.159" status="PASS"></status>
-=======
-<status endtime="20170303 05:42:32.300" starttime="20170303 05:42:32.233" status="PASS"></status>
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+<status endtime="20170308 11:23:20.951" starttime="20170308 11:23:20.940" status="PASS"></status>
 </kw>
 <kw library="keywords.ArgumentParserKeywords" name="Get Bathrooms">
 <assign>
 <var>${bathrooms}</var>
 </assign>
-<<<<<<< HEAD
-<msg level="INFO" timestamp="20170306 15:58:47.206">${bathrooms} = 3.5</msg>
-<status endtime="20170306 15:58:47.206" starttime="20170306 15:58:47.190" status="PASS"></status>
-=======
-<msg level="INFO" timestamp="20170303 05:42:32.318">${bathrooms} = 3.5</msg>
-<status endtime="20170303 05:42:32.323" starttime="20170303 05:42:32.304" status="PASS"></status>
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+<msg level="INFO" timestamp="20170308 11:23:20.962">${bathrooms} = 3.5</msg>
+<status endtime="20170308 11:23:20.965" starttime="20170308 11:23:20.955" status="PASS"></status>
 </kw>
 <kw library="BuiltIn" name="Should Be Equal">
 <doc>Fails if the given objects are unequal.</doc>
@@ -289,78 +179,33 @@ edu.jsu.mcis.Argument@6d00fee7</msg>
 <arg>3.5</arg>
 <arg>${bathrooms}</arg>
 </arguments>
-<<<<<<< HEAD
-<status endtime="20170306 15:58:47.237" starttime="20170306 15:58:47.206" status="PASS"></status>
+<status endtime="20170308 11:23:20.992" starttime="20170308 11:23:20.971" status="PASS"></status>
 </kw>
-<status critical="yes" endtime="20170306 15:58:47.253" starttime="20170306 15:58:46.846" status="PASS"></status>
+<status critical="yes" endtime="20170308 11:23:20.996" starttime="20170308 11:23:20.745" status="PASS"></status>
 </test>
-<status endtime="20170306 15:58:47.284" starttime="20170306 15:58:45.753" status="PASS"></status>
+<status endtime="20170308 11:23:21.010" starttime="20170308 11:23:20.120" status="PASS"></status>
 </suite>
-<suite source="C:\Users\Sarah\Desktop\CS 310\ArgumentParser-ANewHope\src\test\acceptancetest\Feature2.robot" name="Feature2" id="s1-s2">
-=======
-<status endtime="20170303 05:42:32.334" starttime="20170303 05:42:32.328" status="PASS"></status>
-</kw>
-<status critical="yes" endtime="20170303 05:42:32.336" starttime="20170303 05:42:32.102" status="PASS"></status>
-</test>
-<status endtime="20170303 05:42:32.346" starttime="20170303 05:42:31.687" status="PASS"></status>
-</suite>
-<suite source="C:\Users\Clement Dikoko\Desktop\Software Engineering\Group Project\ArgumentParser-ANewHope\src\test\acceptancetest\feature2.robot" name="Feature2" id="s1-s2">
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+<suite source="C:\Users\Chelsea\Documents\GitHub\ArgumentParser-ANewHope\src\test\acceptancetest\feature2.robot" name="Feature2" id="s1-s2">
 <test name="Test Usage Message" id="s1-s2-t1">
 <kw library="keywords.ArgumentParserKeywords" name="Start Program With Arguments">
 <arguments>
 <arg>-h</arg>
 </arguments>
-<<<<<<< HEAD
-<msg level="INFO" timestamp="20170306 15:58:47.565">edu.jsu.mcis.Argument@15ff7ce8</msg>
-<status endtime="20170306 15:58:47.581" starttime="20170306 15:58:47.550" status="PASS"></status>
-=======
-<msg level="INFO" timestamp="20170303 05:42:32.410">edu.jsu.mcis.Argument@7556ddd2</msg>
-<status endtime="20170303 05:42:32.411" starttime="20170303 05:42:32.404" status="PASS"></status>
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+<msg level="INFO" timestamp="20170308 11:23:21.175">edu.jsu.mcis.Argument@570351b1</msg>
+<status endtime="20170308 11:23:21.181" starttime="20170308 11:23:21.164" status="PASS"></status>
 </kw>
 <kw library="keywords.ArgumentParserKeywords" name="Get Program Output">
 <assign>
 <var>${output}</var>
 </assign>
-<<<<<<< HEAD
-<msg level="FAIL" timestamp="20170306 15:58:47.753">NullPointerException</msg>
-<status endtime="20170306 15:58:47.753" starttime="20170306 15:58:47.581" status="FAIL"></status>
+<msg level="FAIL" timestamp="20170308 11:23:21.281">NullPointerException</msg>
+<status endtime="20170308 11:23:21.287" starttime="20170308 11:23:21.187" status="FAIL"></status>
 </kw>
-<status critical="yes" endtime="20170306 15:58:47.768" starttime="20170306 15:58:47.534" status="FAIL">NullPointerException</status>
+<status critical="yes" endtime="20170308 11:23:21.294" starttime="20170308 11:23:21.150" status="FAIL">NullPointerException</status>
 </test>
-<status endtime="20170306 15:58:47.800" starttime="20170306 15:58:47.393" status="FAIL"></status>
+<status endtime="20170308 11:23:21.307" starttime="20170308 11:23:21.055" status="FAIL"></status>
 </suite>
-<status endtime="20170306 15:58:47.846" starttime="20170306 15:58:44.393" status="FAIL"></status>
-=======
-<msg level="INFO" timestamp="20170303 05:42:32.417">${output} = None</msg>
-<status endtime="20170303 05:42:32.418" starttime="20170303 05:42:32.414" status="PASS"></status>
-</kw>
-<kw library="BuiltIn" name="Should Be Equal">
-<doc>Fails if the given objects are unequal.</doc>
-<arguments>
-<arg>${expected}</arg>
-<arg>${output}</arg>
-</arguments>
-<msg level="FAIL" timestamp="20170303 05:42:32.427">usage: java VolumeCalculator length width height
-Calcuate the volume of a box.
-positional arguments:
-length the length of the box (float)
-width the width of the box(float)
-height the height of the box(float) != None</msg>
-<status endtime="20170303 05:42:32.429" starttime="20170303 05:42:32.421" status="FAIL"></status>
-</kw>
-<status critical="yes" endtime="20170303 05:42:32.437" starttime="20170303 05:42:32.393" status="FAIL">usage: java VolumeCalculator length width height
-Calcuate the volume of a box.
-positional arguments:
-length the length of the box (float)
-width the width of the box(float)
-height the height of the box(float) != None</status>
-</test>
-<status endtime="20170303 05:42:32.450" starttime="20170303 05:42:32.361" status="FAIL"></status>
-</suite>
-<status endtime="20170303 05:42:32.469" starttime="20170303 05:42:31.256" status="FAIL"></status>
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+<status endtime="20170308 11:23:21.324" starttime="20170308 11:23:19.304" status="FAIL"></status>
 </suite>
 <statistics>
 <total>
@@ -376,10 +221,6 @@ height the height of the box(float) != None</status>
 </suite>
 </statistics>
 <errors>
-<<<<<<< HEAD
-<msg level="WARN" timestamp="20170306 15:58:46.206">Keyword 'Get Length' found both from a custom test library 'keywords.ArgumentParserKeywords' and a standard library 'BuiltIn'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'keywords.ArgumentParserKeywords.Get Length' or 'BuiltIn.Get Length'.</msg>
-=======
-<msg level="WARN" timestamp="20170303 05:42:31.848">Keyword 'Get Length' found both from a custom test library 'keywords.ArgumentParserKeywords' and a standard library 'BuiltIn'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'keywords.ArgumentParserKeywords.Get Length' or 'BuiltIn.Get Length'.</msg>
->>>>>>> 7acd99449022119232611bfca25712ffde9a112f
+<msg level="WARN" timestamp="20170308 11:23:20.401">Keyword 'Get Length' found both from a custom test library 'keywords.ArgumentParserKeywords' and a standard library 'BuiltIn'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'keywords.ArgumentParserKeywords.Get Length' or 'BuiltIn.Get Length'.</msg>
 </errors>
 </robot>
