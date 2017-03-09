@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 import org.junit.*;
 
 
-public class Feature2Test {
+public class HelpTest {
 	private ArgumentParser pa;
 	private Argument ga;
 	
@@ -14,7 +14,7 @@ public class Feature2Test {
 		ga = new Argument();
 	}
 	
-	/*@Test //(expected= HelpMessageException.class)
+	@Test (expected= HelpMessageException.class)
 	public void TestUsageMessage(){
 		ga.setName("-h");
 		pa.addArg(ga);
@@ -24,5 +24,5 @@ public class Feature2Test {
 		temp = pa.getArg("-h");
 		System.out.println(temp);
 		assertEquals("-h", temp.getValue());
-	}*/
+	}
 }

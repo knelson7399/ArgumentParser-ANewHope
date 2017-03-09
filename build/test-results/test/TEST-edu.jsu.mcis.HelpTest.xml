@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.jsu.mcis.HelpTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-03-09T20:09:26" hostname="LAPTOP-NHA48JL9" time="0.003">
+  <properties/>
+  <testcase name="TestUsageMessage" classname="edu.jsu.mcis.HelpTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

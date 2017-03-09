@@ -88,4 +88,14 @@ public class ArgumentParserTest {
 		temp = pa.getArg("length");
 		assertEquals("val1", temp.getValue());
 	}	
+	@Test (expected= HelpMessageException.class)
+	public void TestUsageMessage(){
+		ga.setName("help");
+		pa.addArg(ga);
+		String[] args = {"-h"};
+		pa.parse(args);
+	}
+	
+	//one more test to test the error message
+	
 }

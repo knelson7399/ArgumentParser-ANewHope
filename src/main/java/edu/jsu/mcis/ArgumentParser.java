@@ -34,25 +34,26 @@ public class ArgumentParser{
 	public void parse(String[] arg) throws RuntimeException{ 
 		String name = "";
 		String extra = "";
-		String less = "";
-		String message = "usage: java" + getProgramName() + name + "\n" + getProgramName() + ".java: error: unrecognized arguments: " ;
+		String less = "";		
 		
 		for(Argument k : listArgs){
 			name += " " + k.getName();
 		}  
-		
-		if(listArgs.equals("-h")){
-                //String help =  "usage: java VolumeCalculator length width height\nCalcuate the volume of a box.\npositional arguments:\nlength the length of the box (float)\nwidth the width of the box(float)\nheight the height of the box(float)";
-				//help = help.trim();
-				try{
-					addArg("-h", "", Argument.Type.STRING);
-				}
-				catch(HelpMessageException e){
-					//throw new HelpMessageException();
-					System.out.println( "" + e.getMessage());
-				}
+		String message = "usage: java" + getProgramName() + name + "\n" + getProgramName() + ".java: error: unrecognized arguments: " ;
+		for(int i = 0; i < arg.length; i++){			
+			if(arg[i].equals("-h")){
+				String description = "";
+				//call function or create message here
+				help= "usage: java " + getProgramName() + name + "\n" + getProgramDescription() + "\npositional arguments:";
+				for(Argument k : listArgs){
+					description += "\n" + k.getDescription();
+				}  
+				help+=description;
+				help = help.trim();
+				throw new HelpMessageException(help);
+			}
 		}
-		else if (arg.length > listArgs.size()){
+		if (arg.length > listArgs.size()){
 			for (int i = listArgs.size(); i < arg.length; i++){
 				extra += arg[i] + " "  ;
 			}
@@ -70,7 +71,7 @@ public class ArgumentParser{
 			throw new IllegalArgumentException(message);
 			
 		}
-	    
+	    //help = "usage: java VolumeCalculator length width height\nCalcuate the volume of a box.\npositional arguments:\nlength the length of the box (float)\nwidth the width of the box(float)\nheight the height of the box(float)";
 		else {
 			for(int i=0; i<arg.length; i++){
 				listArgs.get(i).setValue(arg[i]);
@@ -92,6 +93,12 @@ public class ArgumentParser{
 	}
 	public String getProgramName(){
 		return programName;
+	}
+	public String getProgramDescription(){
+		return programDescription;
+	}
+	public void setProgramDescription(String description){
+		programDescription =description;
 	}
 	
 	public void setProgramName(String name){

@@ -1,4 +1,3 @@
-package keywords;
 import edu.jsu.mcis.*;
 import java.util.*;
 import java.lang.*;
@@ -89,19 +88,22 @@ public class ArgumentParserKeywords {
 	public String getBathrooms(){
 		return pa.getArg("bathrooms").getValue();
 	}
-	
 	public void StartProgramWithArguments(String[] args){
 		pa = new ArgumentParser();
-		helpError = false;
+		pa.setProgramName("VolumeCalculator");
+		pa.setProgramDescription("Calcuate the volume of a box.");
 				
-		pa.addArg("-h", "", Argument.Type.STRING);
+		pa.addArg("length", "\tlength the length of the box (float)", Argument.Type.STRING);
+		pa.addArg("width", "\twidth the width of the box(float)", Argument.Type.STRING);
+		pa.addArg("height", "\theight the height of the box(float)", Argument.Type.STRING);
 		
 		try{
 			pa.parse(args);
 		}
 		catch(HelpMessageException e){
-			System.out.println("" + e.getMessage());
+			helpError = true;
 		}
+
 	}
 	
 	
