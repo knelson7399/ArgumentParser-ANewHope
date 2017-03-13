@@ -3,8 +3,7 @@ package edu.jsu.mcis;
 import java.lang.*;
 import java.util.*;
 import java.io.*;
-//import edu.jsu.mcis.HelpMessageException;
-//import edu.jsu.mcis.HelpMessageException;
+
 
 
 public class ArgumentParser{
@@ -43,7 +42,7 @@ public class ArgumentParser{
 		for(int i = 0; i < arg.length; i++){			
 			if(arg[i].equals("-h")){
 				String description = "";
-				//call function or create message here
+				
 				help= "usage: java " + getProgramName() + name + "\n" + getProgramDescription() + "\npositional arguments:";
 				for(Argument k : listArgs){
 					description += "\n" + k.getDescription();
@@ -71,7 +70,7 @@ public class ArgumentParser{
 			throw new IllegalArgumentException(message);
 			
 		}
-	    //help = "usage: java VolumeCalculator length width height\nCalcuate the volume of a box.\npositional arguments:\nlength the length of the box (float)\nwidth the width of the box(float)\nheight the height of the box(float)";
+	    
 		else {
 			for(int i=0; i<arg.length; i++){
 				listArgs.get(i).setValue(arg[i]);
@@ -104,38 +103,13 @@ public class ArgumentParser{
 	public void setProgramName(String name){
 		programName = name;
 	}	
-	/*private void getErrorMessage(String[] arg){
-		String message = "usage: java";  
-		String name = "";
-		String extra = "";
-		
-		
-		for(Argument k : listArgs){
-			name += " " + k.getName();
-		}         
-		if (arg.length > listArgs.size()){
-			for (int i = listArgs.size(); i < arg.length; i++){
-				extra += arg[i] + " "  ;
-			}
-		}
-				
-		message = message + getProgramName() + name + "\n" + getProgramName() + ".java: error: unrecognized arguments: " + extra;
-		message = message.trim();
-		throw new IllegalArgumentException (message);
-	}*/
+	
 	
 	public String getMessage(){
 		return message;
 	}
 	
-	/*public void helpMessage(){
-		if(listArgs.equals("-h")){
-                help = "usage: java VolumeCalculator length width height\nCalcuate the volume of a box.\npositional arguments:\nlength the length of the box (float)\nwidth the width of the box(float)\nheight the height of the box(float)";
-				help = help.trim();
-				throw new HelpMessageException (help);
-		}
 	
-	}*/
 	public String getHelpMessage(){
 		return help;
 	}
