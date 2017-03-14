@@ -40,7 +40,7 @@ public class ArgumentParser{
 		}  
 		String message = "usage: java" + getProgramName() + name + "\n" + getProgramName() + ".java: error: unrecognized arguments: " ;
 		for(int i = 0; i < arg.length; i++){			
-			if(arg[i].equals("-h")){
+			if(arg[i].equals("-h") || arg[i].equals("--help")){
 				String description = "";
 				
 				help= "usage: java " + getProgramName() + name + "\n" + getProgramDescription() + "\npositional arguments:";
@@ -70,7 +70,7 @@ public class ArgumentParser{
 			throw new IllegalArgumentException(message);
 			
 		}
-	    
+	   
 		else {
 			for(int i=0; i<arg.length; i++){
 				listArgs.get(i).setValue(arg[i]);
@@ -103,12 +103,11 @@ public class ArgumentParser{
 	public void setProgramName(String name){
 		programName = name;
 	}	
-	
+
 	
 	public String getMessage(){
 		return message;
 	}
-	
 	
 	public String getHelpMessage(){
 		return help;

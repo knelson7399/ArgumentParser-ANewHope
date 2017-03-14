@@ -25,4 +25,16 @@ public class HelpTest {
 		System.out.println(temp);
 		assertEquals("-h", temp.getValue());
 	}
+
+	@Test (expected = HelpMessageException.class)
+	public void TestLongFormUsageMessage(){
+		ga.setName("--help");
+		pa.addArg(ga);
+		String[] args = {"--help"};
+		pa.parse(args);
+		Argument temp = new Argument();
+		temp = pa.getArg("--help");
+		System.out.println(temp);
+		assertEquals("--help", temp.getValue());
+	}
 }
